@@ -19,7 +19,7 @@
                 <li><a class="active" href="../html/shop.html">Shop</a></li>
                 <li> <a  href="../html/login.html">Login</a></li>
                 <li> <a href="../html/registro.html">Registro</a></li>
-                <li id="lg-bag"><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="#"><i class="fa fa-shopping-bag"></i><span id="bag-count">0</span></a></li>
                 <a href="#" id="close"><i class=" far fa-times"></i></a>
             </ul>
         </div>
@@ -65,7 +65,7 @@
                 <option>Small</option>
             </select>
             <input type="number" value="1">
-            <button class="normal">Agregar a la cartera</button>
+            <button class="normal" id="agregar-btn">Agregar a la cartera</button>
             <h4>Detalles</h4>
             <span>Conjunto con estilo, hay diferentes colores y esta en tendencia.</span>
         </div>
@@ -183,22 +183,7 @@
 
     </footer>
 
-    <script>
-        var MainImg = document.getElementById("MainImg");
-        var smalling = document.getElementsByClassName("small-img");
+<script src="../Javascript/product.js"></script>
 
-        smallimg[0].onclick = function(){
-            MainImg.src = smallimg[0].src;
-        }
-        smallimg[1].onclick = function(){
-            MainImg.src = smallimg[1].src;
-        }
-        smallimg[2].onclick = function(){
-            MainImg.src = smallimg[2].src;
-        }
-        smallimg[3].onclick = function(){
-            MainImg.src = smallimg[3].src;
-        }
-    </script>
 </body>
 </html>
