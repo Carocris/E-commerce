@@ -1,34 +1,23 @@
-function validarFormulario() {
-    var username = document.getElementById("username").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
-  
-    if (username.trim() === "") {
-      alert("Por favor, ingrese un nombre de usuario.");
-      return false;
-    }
-  
-    if (email.trim() === "") {
-      alert("Por favor, ingrese un correo electrónico.");
-      return false;
-    }
-  
-    if (password.trim() === "") {
-      alert("Por favor, ingrese una contraseña.");
-      return false;
-    }
-  
-    if (confirmPassword.trim() === "") {
-      alert("Por favor, confirme su contraseña.");
-      return false;
-    }
-  
-    if (password !== confirmPassword) {
-      alert("Las contraseñas no coinciden.");
-      return false;
-    }
-  
-    return true;
-  }
-  
+const signUpButton = document.getElementById("signUp");
+const signInButton = document.getElementById("signIn");
+const container = document.getElementById("container");
+
+signUpButton.addEventListener("click", () => {
+    container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener("click", () => {
+    container.classList.remove("right-panel-active");
+});
+
+function myFunction___ad() {
+    var signIn = document.getElementById("container");
+    signIn.classList.toggle("sign-in-container__show");
+    signIn.classList.remove("sign-up-container__show");
+}
+
+function myFunction___hi() {
+    var signUp = document.getElementById("container");
+    signUp.classList.toggle("sign-up-container__show");
+    signUp.classList.remove("sign-in-container__show");
+}
