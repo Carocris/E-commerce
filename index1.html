@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styless/styless4.css">
+    <link rel="stylesheet" href="../E-commerce/fontawesome/css/all.css">    
+    <title>index</title>
+    <style>
+body{
+    width: 100%;
+    background: hwb(31 69% 15%);
+}
+
+.logo{
+    width: 50%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: hwb(31 69% 15%);
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover, 
+#navbar li a.active {
+    color: aliceblue;
+}
+
+#navbar li a.active::after
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(192, 247, 255);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="../E-commerce/img/logo.png" class="logo"alt="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li> <a href="../E-commerce/html/index.html">Home</a></li>
+                <li> <a href="../E-commerce/html/login.html">Login</a></li>
+                <li> <a href="../E-commerce/html/registro.html">Registro</a></li>
+                <li id="lg-bag"><a href="../E-commerce/html/shop.html"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    
+    </section>
+
+    <h1> Dale click a las cosas que esten en el navbar, arriba</h1>
+
+    </body>
+    </html>
+
+
+
+
