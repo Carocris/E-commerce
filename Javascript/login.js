@@ -1,28 +1,30 @@
-function validarInicioSesion() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
-  
-    if (email.trim() == "") {
-      alert("Por favor, ingrese su correo electrónico");
-      return false;
-    }
-  
-    if (password.trim() == "") {
-      alert("Por favor, ingrese su contraseña");
-      return false;
-    }
-  
-    if (password != confirmPassword) {
-      alert("Las contraseñas no coinciden");
-      return false;
-    }
-  
-    return true;
+function validateForm() {
+  // Obtener los valores de los campos
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  // Verificar que la dirección de correo electrónico sea válida
+  var emailRegex = /^\S+@\S+\.\S+$/;
+  if (!emailRegex.test(email)) {
+    alert("Por favor ingrese una dirección de correo electrónico válida");
+    return false;
   }
 
+  // Verificar que se haya ingresado una contraseña
+  if (password.length == 0) {
+    alert("Por favor ingrese una contraseña");
+    return false;
+  }
 
-  document.querySelector('form').addEventListener('submit', function() {
-    window.location.href = 'profile.html';
-  });
-  
+  // Verificar que las credenciales coincidan con las almacenadas en el localStorage
+  var storedEmail = localStorage.getItem("email");
+  var storedPassword = localStorage.getItem("password");
+  if (email == storedEmail && password == storedPassword) {
+    // Redirigir al usuario a la página de bienvenida
+    window.location.href = "bienvenido.html";
+  } else {
+    // Mostrar un mensaje de error
+    alert("Credenciales incorrectas");
+    return false;
+  }
+}

@@ -11,6 +11,22 @@ let sliderSectionLast = sliderSection[sliderSection.length - 1];
 const btnLeft = document.querySelector("#btn-left");
 const btnRight = document.querySelector("#btn-right");
 
+// Obtener los datos del localStorage
+var username = localStorage.getItem("username");
+var email = localStorage.getItem("email");
+var password = localStorage.getItem("password");
+
+// Mostrar un mensaje de bienvenida al usuario
+document.getElementById("bienvenido").innerHTML = "Bienvenido, " + username + "! Tu dirección de correo electrónico es " + email + " y tu contraseña es " + password;
+
+// Obtener el nombre de usuario del localStorage
+var username = localStorage.getItem("username");
+
+// Mostrar un mensaje de bienvenida al usuario
+document.getElementById("bienvenido").innerHTML = "Bienvenido, " + username + "!";
+
+
+
 slider.insertAdjacentElement("afterbegin", sliderSectionLast);
 
 function Next() {
