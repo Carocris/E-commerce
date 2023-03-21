@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styless/styless7.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">    
+    <title>Comprar</title>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="../img/logo.png" class="logo"alt="logo"></a>
+        <div>
+          <ul id="navbar">
+            <li> <a href="../html/index1.html">Home</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li> <a  href="../html/login.html">Login</a></li>
+            <li> <a href="../html/registro.html">Registro</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      </section>
+      
+    <section id="checkout-section">
+          <h2>Pago</h2>
+          <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+      
+            <label for="direccion">Dirección de envío:</label>
+            <input type="text" id="direccion" name="direccion"><br>
+      
+            <label for="tarjeta">Número de tarjeta de crédito:</label>
+            <input type="text" id="tarjeta" name="tarjeta"><br>
+      
+            <button type="submit" onclick="checkout()">Comprar</button>
+          </form>
+    </section>
+      
+   
+    <section id="confirmation-section">
+          <h2>Confirmación del pedido</h2>
+          <p>Gracias por tu compra.</p>
+          <p>Número de seguimiento: <span id="tracking-number"></span></p>
+          <p>Sigue el estado de tu pedido en la página de seguimiento del transportista:</p>
+          <a id="tracking-link" href="#">http://www.transportista.com/tracking</a>
+    </section>
+      
+
+    <script src="../Javascript/comprar.js"></script>
+</body>
+</html>
