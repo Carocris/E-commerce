@@ -1,0 +1,114 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+#header .logo {
+  max-width: 150px;
+}
+
+#navbar {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+#navbar li a:hover {
+  color: #ccc;
+}
+
+#lg-bag {
+  display: flex;
+  align-items: center;
+}
+
+#mobile {
+  display: none;
+}
+
+/* Cart Section */
+#cart {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+}
+
+thead tr {
+  background-color: #f2f2f2;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cart-summary h2 {
+  font-size: 24px;
+}
+
+#checkout-btn {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+#checkout-btn a{
+
+  text-decoration: none;
+  color: white;
+
+}
+
+#checkout-btn:hover {
+  background-color: #e74c3c;
+}
+
+#delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+#delete-btn:hover {
+  background-color: white;
+  color: red;
+}

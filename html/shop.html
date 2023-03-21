@@ -40,7 +40,7 @@
 
     <section id="product1" class="section-p1">
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='sproduct.html'";>
+            <div class="pro">
                 <img src="../img-ropa/oufit1.jpg" alt="Producto">
                 <div class="des">
                     <span>forever</span>
@@ -54,11 +54,18 @@
                     </div>
                     <h4>$500</h4>
                 </div>
-                <a href="#"><i class=" fa fa-cart-shopping "></i></a>
+                <a href="#" onclick="addToCart('Producto 1', 500, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+                </a>
             </div>
+        </div>
           
-            <div class="pro" onclick="window.location.href='sproduct.html'";>
-                <img src="../img-ropa/oufit2.jpg" alt="Producto">
+        <div class="pro">
+            <img src="../img-ropa/oufit2.jpg" alt="Producto">
             <div class="des">
                 <span>forever</span>
                 <h5>Conjuntos</h5>
@@ -69,254 +76,337 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h4>$500</h4>
+                <h4>$1000</h4>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
+            <a href="#" onclick="addToCart('Producto 2', 1000, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+            <select id="talla-producto2">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
         </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit3.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+        <div class="pro">
+                <img src="../img-ropa/oufit3.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$900</h4>
                 </div>
-                <h4>$500</h4>
-            </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
+                <a href="#" onclick="addToCart('Producto 3', 900, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto3">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
         </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit4.jpg" alt="ropa1">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro">
+                <img src="../img-ropa/oufit4.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$670</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 4', 670, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto4">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit5.jpg" alt="ropa2">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+        <div class="pro">
+                <img src="../img-ropa/oufit5.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
-            </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
+                <a href="#" onclick="addToCart('Producto 5', 500, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto5">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
         </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit6.jpg" alt="ropa3">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro">
+                <img src="../img-ropa/oufit6.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$760</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 6', 760, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto6">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit7.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro">
+                <img src="../img-ropa/oufit7.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$587</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 7', 587, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto7">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit8.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+        <div class="pro">
+                <img src="../img-ropa/oufit8.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
+                <p>Tallas:</p>
+                <a href="#" onclick="addToCart('Producto 8', 500, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto8">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit9.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+        <div class="pro">
+                <img src="../img-ropa/oufit9.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 9', 500, 'Talla: ' + document.getElementById('talla-producto1').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto9">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit10.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+        <div class="pro">
+                <img src="../img-ropa/oufit10.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 10', 500, 'Talla: ' + document.getElementById('talla-producto10').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto10">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit11.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
+
+
+            <div class="pro">
+                <img src="../img-ropa/oufit11.jpg" alt="Producto">
+                <div class="des">
+                  <span>forever</span>
+                  <h5>Conjuntos</h5>
+                  <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
+                  </div>
+                  <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
-            </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
+                <a href="#" onclick="addToCart('Producto 11', 500, 'Talla: ' + document.getElementById('talla-producto11').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto11">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit12.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
+
+              <div class="pro">
+                <img src="../img-ropa/oufit12.jpg" alt="Producto">
+                <div class="des">
+                  <span>forever</span>
+                  <h5>Conjuntos</h5>
+                  <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
+                  </div>
+                  <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
-            </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
+                <a href="#" onclick="addToCart('Producto 12', 500, 'Talla: ' + document.getElementById('talla-producto12').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto12">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit13.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+         <div class="pro">
+                <img src="../img-ropa/oufit13.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 13', 500, 'Talla: ' + document.getElementById('talla-producto13').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto13">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit14.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+         <div class="pro">
+                <img src="../img-ropa/oufit14.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 14', 500, 'Talla: ' + document.getElementById('talla-producto14').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto14">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit15.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+         <div class="pro">
+                <img src="../img-ropa/oufit15.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$700</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 15', 700, 'Talla: ' + document.getElementById('talla-producto15').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto15">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
-        <div class="pro" onclick="window.location.href='sproduct.html'";>
-            <img src="../img-ropa/oufit16.jpg" alt="Producto">
-            <div class="des">
-                <span>forever</span>
-                <h5>Conjuntos</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+         <div class="pro">
+                <img src="../img-ropa/oufit16.jpg" alt="Producto">
+                <div class="des">
+                    <span>forever</span>
+                    <h5>Conjuntos</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$600</h4>
                 </div>
-                <h4>$500</h4>
+                <a href="#" onclick="addToCart('Producto 16', 600, 'Talla: ' + document.getElementById('talla-producto16').value);"><i class="fa fa-cart-shopping"></i></a>
+                <select id="talla-producto16">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
             </div>
-            <a href="#"><i class=" fa fa-cart-shopping "></i></a>
-        </div>
 
 
-    </div>
 
-
-        
+    </div>  
 
     </section>
 

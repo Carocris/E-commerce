@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styless/styless6.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.css">
+  <title>Cart</title>
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="../img/logo.png" class="logo"alt="logo"></a>
+    <div>
+      <ul id="navbar">
+        <li> <a href="../html/index1.html">Home</a></li>
+        <li><a href="../html/shop.html">Shop</a></li>
+        <li> <a  href="../html/login.html">Login</a></li>
+        <li> <a href="../html/registro.html">Registro</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h1>Carrito de compras</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Talla</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+
+      </tbody>
+    </table>
+    <div class="cart-summary">
+      <h2>Total: <span id="cart-total">$0</span></h2>
+      <div class="cart-buttons">
+        <button id="delete-btn">Borrar carrito</button>
+        <button id="checkout-btn"><a href="../html/shop.html">Continuar con la compra</a></button>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="../Javascript/cart.js"></script>
+    
+</body>
+</html>

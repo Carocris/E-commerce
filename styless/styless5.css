@@ -261,6 +261,15 @@ justify-content: center;
     flex-wrap: wrap;
 }
 
+
+.product-container {
+    display: flex;
+  }
+
+  .pro {
+    width: 25%;
+  }
+  
 #product1 .pro{
     width: 23%;
     min-width: 250px;
